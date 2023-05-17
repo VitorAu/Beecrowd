@@ -1,0 +1,19 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main() {
+	
+	string nome;
+	double s_f, mont, tot;
+	
+	cin >> nome >> s_f >> mont;
+	
+	tot = s_f + (mont * 15/100);
+	
+	cout << fixed << setprecision(2);
+	cout << "TOTAL = R$ " << tot << endl;
+	
+	return 0;
+}
