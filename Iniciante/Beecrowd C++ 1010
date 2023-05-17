@@ -1,0 +1,16 @@
+#include <iostream>
+#include <iomanip>
+ 
+using namespace std;
+ 
+int main() {
+    
+    int P1, N1, P2, N2;
+    double V1, V2;
+    
+    cout << fixed << setprecision(2);
+    cin >> P1 >> N1 >> V1 >> P2 >> N2 >> V2;
+    cout << "VALOR A PAGAR: R$ " << (N1*V1)+(N2*V2) << endl;
+    
+    return 0;
+}
