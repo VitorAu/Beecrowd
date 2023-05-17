@@ -1,0 +1,18 @@
+#include <iostream>
+#include <iomanip>
+ 
+using namespace std;
+ 
+int main() {
+    
+    int N, H;
+    float D;
+    
+    cout << fixed << setprecision(2);
+    cin >> N >> H >> D;
+    cout << "NUMBER = " << N << endl;
+    cout << "SALARY = U$ " << H*D << endl;
+    
+    
+    return 0;
+}
