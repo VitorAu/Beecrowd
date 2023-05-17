@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	
+	int seg, min, h;
+	
+	cin >> seg;
+	
+	h = seg / 3600;
+	seg = seg - (h * 3600);
+	
+	min = seg / 60;
+	seg = seg - (min * 60);
+	
+	cout << h << ":" << min << ":" << seg << endl;
+	
+	return 0;
+}
