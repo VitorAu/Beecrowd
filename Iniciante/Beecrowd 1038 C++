@@ -1,0 +1,44 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main() {
+	
+	int cod, quant;
+	double tot;
+	
+	cin >> cod >> quant;
+	
+	if (cod == 1) {
+		tot = 4.00 * quant;
+		cout << fixed << setprecision(2);
+		cout << "Total: R$ " << tot << endl;
+	}
+	
+	else if (cod == 2) {
+		tot = 4.50 * quant;
+		cout << fixed << setprecision(2);
+		cout << "Total: R$ " << tot << endl;
+	}
+	
+	else if (cod == 3) {
+		tot = 5.00 * quant;
+		cout << fixed << setprecision(2);
+		cout << "Total: R$ " << tot << endl;
+	}
+	
+	else if (cod == 4) {
+		tot = 2.00 * quant;
+		cout << fixed << setprecision(2);
+		cout << "Total: R$ " << tot << endl;
+	}
+	
+	else {
+		tot = 1.50 * quant;
+		cout << fixed << setprecision(2);
+		cout << "Total: R$ " << tot << endl;
+	}
+	
+	return 0;
+}
