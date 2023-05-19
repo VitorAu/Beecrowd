@@ -1,0 +1,51 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main() {
+	
+	double N1, N2, N3, N4, N5, M1, M2;
+	
+	cin >> N1 >> N2 >> N3 >> N4;
+	
+	M1 = (N1 * 2 + N2 * 3 + N3 * 4 + N4 * 1) / 10;
+	
+	if (M1 >= 7.0) {
+		cout << fixed << setprecision(1);
+		cout << "Media: " << M1 << endl;
+		cout << "Aluno aprovado." << endl;
+	}
+	
+	else if (M1 < 5.0) {
+		cout << fixed << setprecision(1);
+		cout << "Media: " << M1 << endl;
+		cout << "Aluno reprovado." << endl;
+	}
+	
+	else {
+		cin >> N5;
+		
+		M2 = (M1 + N5) / 2;
+		
+		if (M2 >= 5.0) {
+			cout << fixed << setprecision(1);
+			cout << "Media: " << M1 << endl;
+			cout << "Aluno em exame." << endl;
+			cout << "Nota do exame: " << N5 << endl;
+			cout << "Aluno aprovado." << endl;
+			cout << "Media final: " << M2 << endl;
+		}
+		
+		else {
+			cout << fixed << setprecision(1);
+			cout << "Media: " << M1 << endl;
+			cout << "Aluno em exame." << endl;
+			cout << "Nota do exame: " << N5 << endl;
+			cout << "Aluno reprovado." << endl;
+			cout << "Media final: " << M2 << endl;
+		}
+	}
+	
+	return 0;
+}
