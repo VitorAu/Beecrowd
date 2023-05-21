@@ -1,0 +1,29 @@
+#include <iostream>
+#include <iomanip>
+#include <locale>
+
+using namespace std;
+
+int main() {
+	
+	double A, B, C;
+	cin >> A >> B >> C;
+	
+	if((A < (B + C)) && (B < (A + C)) && (C < (A + B))) {
+		double X;
+		X = A + B + C;
+		
+		cout << fixed << setprecision(1);
+		cout << "Perimetro = " << X << endl;
+	}
+	
+	else {
+		double area;
+		
+		area = 	((A + B)*C) / 2.0;
+		cout << fixed << setprecision(1);
+		cout << "Area = " << area << endl;
+	}
+	
+	return 0;
+}
